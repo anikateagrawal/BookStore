@@ -29,7 +29,7 @@ app.get("/books",(req,res)=>{
 })
 
 app.use(express.json())
-
+ 
 app.post("/books",(req,res)=>{
     const q="Insert into books(`title`,`desc`,`cover`,`price`) values(?)";
     const values=[req.body.title,req.body.desc,req.body.cover,req.body.price];
